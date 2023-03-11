@@ -1,23 +1,38 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import About from './pages/About';
+import Portfolio from './pages/Portfolio';
+import Resume from './pages/Resume';
+import Contact from '22./pages/Contact';
 
 function App() {
+  let Page;
+
+  switch(window.location.pathname){
+    case '/':
+      Page = About
+      break;
+    case '/about':
+      Page = About
+      break;
+    case '/portfolio':
+      Page = Portfolio
+      break;
+    case '/resume':
+      Page = Resume
+      break;
+    case '/contact':
+      Page = Contact;
+      break;
+      default:
+      break;
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+
+      <Page />
     </div>
   );
 }
