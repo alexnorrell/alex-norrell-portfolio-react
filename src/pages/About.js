@@ -23,7 +23,7 @@ import headshot from '../images/IMG_7377.JPG';
                                     fontSize: '1.4vw'
                                 }}>Hi, my name is Alex Norrell! I am 30 years old and am attending 
                                 classes through Georgia Tech to become a full stack programmer.
-                                 When I am not doing that I am either working with dogs or playing 
+                                 When I am not doing that, I am either working with dogs or playing 
                                  music with my band.
                             </p>
                     </div> 
